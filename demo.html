@@ -1,0 +1,43 @@
+<html lang="en">
+
+<style>
+    body {
+        background: #000;
+    }
+    section {
+        height:100vh;
+    }
+
+.scroll-reveal span {
+    color: hsl(0 0% 100% / 0.2);
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-image: linear-gradient(90deg, white, white);
+  animation: scroll-reveal linear forwards;
+  animation-timeline: view();
+  animation-range: contain;
+}
+
+.scroll-reveal p span {
+    animation-range-start: cover 35vh;
+  animation-range-end: cover 80vh;
+}
+
+@keyframes scroll-reveal {
+    to {
+    background-size: 100% 100%;
+  }
+}
+</style>
+
+<body>
+    <section></section>
+
+    <section class="section scroll-reveal">
+        <p class="paragraph"><span class="span">I found that voice in the woods. It wasn’t an evil witch or a ferocious siren. It was the magic that whispers through life, in the spaces between molecules and in the silence between sounds.</span></p>
+    </section>
+
+     <section></section>
+</body>
+</html>
